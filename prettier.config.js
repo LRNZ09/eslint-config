@@ -1,7 +1,1 @@
-module.exports = {
-	jsxSingleQuote: true,
-	semi: false,
-	singleQuote: true,
-	trailingComma: 'all',
-	useTabs: true,
-}
+module.exports = '@lrnz09/prettier-config'

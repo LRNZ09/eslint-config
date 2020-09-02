@@ -109,6 +109,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@lrnz09/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@lrnz09/prettier-config/-/prettier-config-1.0.0.tgz#78fbba17a3e17888b4bd7effe13eef946fe1b56f"
+  integrity sha512-Orp0hpD6eZBV4cFUORsI73AIPLiFb98CWoRMpeNhD9ea4prm+IhSCNzXtXXurDPPLRoiU91UDPbwdIRK1TwdRA==
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
