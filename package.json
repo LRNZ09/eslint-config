@@ -1,0 +1,43 @@
+{
+	"name": "@lrnz09/eslint-config",
+	"version": "0.9.0",
+	"description": "My own ESLint configuration",
+	"main": "index.js",
+	"repository": "https://github.com/LRNZ09/eslint-config.git",
+	"author": "Lorenzo Pieri <email@lorenzopieri.dev>",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^7.8.1",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-unicorn": "^21.0.0",
+		"eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0",
+		"prettier": "^2.1.1"
+	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "~4",
+		"@typescript-eslint/parser": "~4",
+		"eslint": "~7",
+		"eslint-config-prettier": "*",
+		"eslint-import-resolver-typescript": "*",
+		"eslint-plugin-emotion": "*",
+		"eslint-plugin-import": "*",
+		"eslint-plugin-jsx-a11y": "*",
+		"eslint-plugin-prettier": "*",
+		"eslint-plugin-react": "*",
+		"eslint-plugin-react-hooks": "*",
+		"eslint-plugin-react-native": "*",
+		"eslint-plugin-unicorn": "*",
+		"eslint-plugin-you-dont-need-lodash-underscore": "*",
+		"prettier": "~2",
+		"typescript": "~4"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix ."
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
+}
