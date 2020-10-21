@@ -13,10 +13,7 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: ['emotion'],
 	rules: {
-		'emotion/styled-import': 'error',
-		'emotion/syntax-preference': ['error', 'object'],
 		'react/display-name': 'warn',
 		'react/prop-types': ['warn', { skipUndeclared: true }],
 	},
