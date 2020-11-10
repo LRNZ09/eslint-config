@@ -33,6 +33,7 @@ module.exports = {
 				],
 			},
 		],
+		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/prevent-abbreviations': [
 			'error',
@@ -40,10 +41,12 @@ module.exports = {
 				whitelist: {
 					Props: true,
 					Ref: true,
+					args: true,
 					props: true,
 					ref: true,
 				},
 			},
 		],
+		'unicorn/prefer-ternary': 'off',
 	},
 }
