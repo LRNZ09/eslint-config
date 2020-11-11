@@ -33,6 +33,7 @@ module.exports = {
 				],
 			},
 		],
+		'no-undefined': 'error',
 		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/prevent-abbreviations': [
