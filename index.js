@@ -19,6 +19,21 @@ module.exports = {
 		sourceType: 'module',
 	},
 	rules: {
+		'import/exports-last': 'error',
+		'import/first': 'error',
+		'import/group-exports': 'error',
+		'import/newline-after-import': 'error',
+		'import/no-absolute-path': 'error',
+		'import/no-cycle': ['warn', { ignoreExternal: true }],
+		'import/no-default-export': 'error',
+		'import/no-deprecated': 'warn',
+		'import/no-duplicates': 'error',
+		'import/no-dynamic-require': 'error',
+		'import/no-extraneous-dependencies': 'warn',
+		'import/no-mutable-exports': 'error',
+		'import/no-self-import': 'error',
+		'import/no-unassigned-import': 'warn',
+		'import/no-useless-path-segments': ['error', { noUselessIndex: true }],
 		'import/order': [
 			'error',
 			{
@@ -39,12 +54,10 @@ module.exports = {
 		'unicorn/prevent-abbreviations': [
 			'error',
 			{
-				whitelist: {
-					Props: true,
-					Ref: true,
-					args: true,
-					props: true,
-					ref: true,
+				replacements: {
+					args: false,
+					props: false,
+					ref: false,
 				},
 			},
 		],

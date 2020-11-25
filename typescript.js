@@ -4,14 +4,6 @@ module.exports = {
 		'plugin:import/typescript',
 		'prettier/@typescript-eslint',
 	],
-	overrides: [
-		{
-			files: ['*.config.js'],
-			rules: {
-				'@typescript-eslint/no-var-requires': 'off',
-			},
-		},
-	],
 	rules: {
 		'@typescript-eslint/no-unused-vars': 'error',
 		// https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#eslint-plugin-import
