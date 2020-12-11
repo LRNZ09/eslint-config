@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: ['emotion'],
+	plugins: ['@emotion'],
 	rules: {
 		'@emotion/import-from-emotion': 'error',
 		'@emotion/no-vanilla': 'error',
