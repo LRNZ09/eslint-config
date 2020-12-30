@@ -6,4 +6,11 @@ module.exports = {
 	rules: {
 		'react-native/no-raw-text': 'warn',
 	},
+	settings: {
+		'import/resolver': {
+			'react-native': {
+				platform: 'any',
+			},
+		},
+	},
 }

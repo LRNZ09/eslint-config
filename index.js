@@ -51,7 +51,7 @@ module.exports = {
 		'no-undefined': 'error',
 		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
-		'unicorn/no-reduce': 'warn',
+		'unicorn/no-array-reduce': 'warn',
 		'unicorn/prevent-abbreviations': [
 			'error',
 			{
