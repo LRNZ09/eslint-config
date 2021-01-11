@@ -6,13 +6,9 @@ module.exports = {
 		'plugin:jsx-a11y/recommended',
 		'plugin:react/recommended',
 		'plugin:react-hooks/recommended',
+		'plugin:import/react',
 		'prettier/react',
 	],
-	parserOptions: {
-		ecmaFeatures: {
-			jsx: true,
-		},
-	},
 	rules: {
 		'react/display-name': 'warn',
 		'react/prop-types': ['warn', { skipUndeclared: true }],

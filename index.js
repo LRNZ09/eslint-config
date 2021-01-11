@@ -16,7 +16,6 @@ module.exports = {
 		ecmaFeatures: {
 			impliedStrict: true,
 		},
-		sourceType: 'module',
 	},
 	rules: {
 		'import/exports-last': 'error',
@@ -25,12 +24,11 @@ module.exports = {
 		'import/newline-after-import': 'error',
 		'import/no-absolute-path': 'error',
 		'import/no-cycle': ['warn', { ignoreExternal: true }],
-		'import/no-default-export': 'error',
 		'import/no-deprecated': 'warn',
 		'import/no-duplicates': 'error',
-		'import/no-dynamic-require': 'error',
+		'import/no-dynamic-require': 'warn',
 		'import/no-extraneous-dependencies': 'warn',
-		'import/no-mutable-exports': 'error',
+		'import/no-mutable-exports': 'warn',
 		'import/no-self-import': 'error',
 		'import/no-unassigned-import': 'warn',
 		'import/no-useless-path-segments': ['error', { noUselessIndex: true }],
@@ -55,6 +53,8 @@ module.exports = {
 		'unicorn/prevent-abbreviations': [
 			'error',
 			{
+				checkProperties: true,
+				checkShorthandProperties: true,
 				replacements: {
 					args: false,
 					props: false,
