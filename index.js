@@ -1,3 +1,16 @@
+// eslint-disable-next-line unicorn/no-array-reduce
+const abbreviationsWhitelist = ['arg', 'prop', 'ref'].reduce(
+	(accumulator, current) => {
+		// Singular
+		accumulator[current] = false
+		// Plural
+		accumulator[`${current}s`] = false
+
+		return accumulator
+	},
+	{},
+)
+
 module.exports = {
 	env: {
 		es2021: true,
@@ -7,7 +20,6 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:import/recommended',
 		'plugin:unicorn/recommended',
-		'plugin:you-dont-need-lodash-underscore/compatible',
 		'plugin:prettier/recommended',
 		'prettier',
 		'prettier/unicorn',
@@ -56,11 +68,7 @@ module.exports = {
 			{
 				checkProperties: true,
 				checkShorthandProperties: true,
-				replacements: {
-					args: false,
-					props: false,
-					ref: false,
-				},
+				replacements: abbreviationsWhitelist,
 			},
 		],
 		'unicorn/prefer-ternary': 'off',
