@@ -1,5 +1,5 @@
 // eslint-disable-next-line unicorn/no-array-reduce
-const abbreviationsWhitelist = ['arg', 'prop', 'ref'].reduce(
+const abbreviationsWhitelist = ['arg', 'env', 'param', 'prop', 'ref'].reduce(
 	(accumulator, current) => {
 		// Singular
 		accumulator[current] = false
@@ -63,14 +63,18 @@ module.exports = {
 		'unicorn/no-null': 'off',
 		'unicorn/no-array-callback-reference': 'warn',
 		'unicorn/no-array-reduce': 'warn',
+		'unicorn/numeric-separators-style': 'error',
 		'unicorn/prevent-abbreviations': [
-			'error',
+			'warn',
 			{
 				checkProperties: true,
 				checkShorthandProperties: true,
 				replacements: abbreviationsWhitelist,
 			},
 		],
+		'unicorn/prefer-array-flat-map': 'error',
+		// TODO: Enable this by default when targeting Node.js 16.
+		'unicorn/prefer-string-replace-all': 'off',
 		'unicorn/prefer-ternary': 'off',
 	},
 }

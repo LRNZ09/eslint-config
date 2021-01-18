@@ -1,5 +1,12 @@
 {
-	"author": "Lorenzo Pieri <email@lorenzopieri.dev>",
+	"author": {
+		"email": "hello@lorenzopieri.dev",
+		"name": "Lorenzo Pieri",
+		"url": "https://lorenzopieri.dev"
+	},
+	"bugs": {
+		"url": "https://github.com/LRNZ09/eslint-config/issues"
+	},
 	"description": "My own ESLint configuration",
 	"devDependencies": {
 		"@lrnz09/prettier-config": "^1.0.0",
@@ -10,8 +17,14 @@
 		"eslint-plugin-unicorn": "^25.0.1",
 		"prettier": "^2.2.1"
 	},
+	"engines": {
+		"node": "~15"
+	},
+	"files": [
+		"src/*.js"
+	],
 	"license": "MIT",
-	"main": "index.js",
+	"main": "src/index.js",
 	"name": "@lrnz09/eslint-config",
 	"peerDependencies": {
 		"@emotion/eslint-plugin": "~11",
@@ -27,11 +40,11 @@
 		"eslint-plugin-react": "~7",
 		"eslint-plugin-react-hooks": "~4",
 		"eslint-plugin-react-native": "~3",
-		"eslint-plugin-unicorn": "~25",
+		"eslint-plugin-unicorn": "~26",
 		"prettier": "~2",
 		"typescript": "~4"
 	},
-	"repository": "https://github.com/LRNZ09/eslint-config.git",
+	"repository": "https://github.com/LRNZ09/eslint-config",
 	"scripts": {
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix ."
