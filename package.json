@@ -21,10 +21,11 @@
 		"node": "~15"
 	},
 	"files": [
-		"src/*.js"
+		"!.*.js",
+		"*.js"
 	],
 	"license": "MIT",
-	"main": "src/index.js",
+	"main": "index.js",
 	"name": "@lrnz09/eslint-config",
 	"peerDependencies": {
 		"@emotion/eslint-plugin": "~11",
