@@ -10,6 +10,7 @@ module.exports = {
 		'prettier/react',
 	],
 	rules: {
+		'jsx-a11y/no-autofocus': ['warn', { ignoreNonDOM: true }],
 		'react/display-name': 'warn',
 		'react/prop-types': ['warn', { skipUndeclared: true }],
 	},
