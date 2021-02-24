@@ -1,3 +1,3 @@
-const config = require('.')
-
-module.exports = config
+module.exports = {
+	extends: ['./index.js', './prettier.js'],
+}

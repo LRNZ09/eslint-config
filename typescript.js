@@ -2,7 +2,6 @@ module.exports = {
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'plugin:import/typescript',
-		'prettier/@typescript-eslint',
 	],
 	rules: {
 		'@typescript-eslint/no-unused-vars': 'error',

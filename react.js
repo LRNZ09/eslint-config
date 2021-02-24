@@ -7,7 +7,6 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:react-hooks/recommended',
 		'plugin:import/react',
-		'prettier/react',
 	],
 	rules: {
 		'jsx-a11y/no-autofocus': ['warn', { ignoreNonDOM: true }],

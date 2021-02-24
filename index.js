@@ -20,9 +20,6 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:import/recommended',
 		'plugin:unicorn/recommended',
-		'plugin:prettier/recommended',
-		'prettier',
-		'prettier/unicorn',
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -58,7 +55,7 @@ module.exports = {
 				],
 			},
 		],
-		'no-undefined': 'error',
+		'no-undefined': 'warn',
 		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/no-array-callback-reference': 'warn',
